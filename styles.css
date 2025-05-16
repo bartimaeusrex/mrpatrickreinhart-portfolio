@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 2em 0 0 2em;
+  margin: 2em;
   font-family: 'EB Garamond', serif;
   font-size:1em;
   background-color: var(--bg-color);
@@ -185,6 +185,7 @@ blockquote::before {
   padding:0;
   margin:-3em auto 0 auto;
   display:block;
+  visibility:visible;
 }
 
 /* .mrp_header {
@@ -239,7 +240,7 @@ blockquote::before {
 
 .content, .postcontent {
   line-height:1.5em;
-  padding:0;
+
   margin:auto;
   display:block;
   position:relative;
@@ -351,7 +352,7 @@ p.firstpara {
 
 @media (max-width:66em) {
   .content, .postcontent {
-    width: 90%;
+    width: 100%;
     margin:auto;
   }
 
@@ -374,11 +375,30 @@ p.firstpara {
   }
 }
 
+@media (max-width:550px) {
+  .main-icon {width:3em;}
+  .mrp_header {width:90%;}
+  .title {
+    margin-top:.25em;
+    font-size:3.5em;
+  }
+}
+
 @media (max-width:500px) {
   .month::after, .month::before {
     content:" × "
   }
+  .mrp_header, .fleuron, .month {visibility:hidden;}
+  .content {width: 100%;}
+  .title {
+    margin-top:-.25em;
+    font-size:3em;
+  }
+  .main-icons{margin-top:-6em;}
+  .main-icon {width:2.5em;}
 }
+
+/* END @MEDIA QUERIES! */
 
 .inwhich {
   margin-left:auto;
