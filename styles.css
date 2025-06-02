@@ -255,17 +255,19 @@ blockquote::before {
   background-size: 50%;
 }
 
-.content, .postcontent, .bio {
+.content, .photogallery {
   line-height:1.5em;
-
   margin:auto;
   display:block;
   position:relative;
-  width:100%;
+  width:36em;
+
   /* trying to get the Sattler illustration to sit to the left of the main content column */
 }
 
-.bio {
+.photogallery {width:100%}
+
+.dropcontent {
   padding-bottom:2.5em;
   font-family: 'EB Garamond', serif;
 }
@@ -292,12 +294,11 @@ blockquote::before {
   content:"sdsdsdsds";
 } */
 
-.content {width:64em;}
-.postcontent, .bio {width:36em;}
 
 /* .content a {
   background-color: var(--bg-color);
 }
+  ....
   */
 
 .hilite {
@@ -427,10 +428,10 @@ p.firstpara {
 }
 
 @media (max-width:500px) {
-  .subtitle::after, .subtitle::before {
-    content:" × "
-  }
-  .mrp_header, .fleuron, .month {visibility:hidden;}
+.month::after, .month::before, .subtitle::after, .subtitle::before {
+  content:" × "
+}
+  .mrp_header, .fleuron {visibility:hidden;}
   .subtitle {margin-top:.25em;}
   .content {width: 100%;}
   .title {
