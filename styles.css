@@ -54,12 +54,12 @@ body {
   border-color:white;
 }
 
+
+
 /* If Grid is supported, remove the margin we set for the fallback */
-@supports (display: grid) {
-  .postbox {
-    margin: 0;
-  }
-}
+@supports (display: grid) {.postbox {margin: 0;}}
+
+
 /* END OF GRID STUFF FROM CODEPEN */
 
 
@@ -107,9 +107,7 @@ a {
   top:.25em;
 }
 
-.main-icons {
-  
-}
+.main-icons img {width:4em;}
 
 .img-1em {width:1em;}
 .img-2em {width:2em;}
@@ -329,17 +327,9 @@ blockquote::before {
 .aside::before {content:"["}
 .aside::after {content:"]"}
 
-.article p {
-  text-indent:1.25em;
-}
-
-.firstpara::before {
-  content:"¶ ";
-}
-
-p.firstpara {
-  text-indent:0;
-}
+.article p {text-indent:1.25em;}
+.firstpara::before {content:"¶ ";}
+p.firstpara {text-indent:0;}
 
 .content::after, .postcontent::after {
   font-size:.75em;
@@ -368,9 +358,8 @@ p.firstpara {
   text-align:center;
 }
 
-.month::after, .month::before, .subtitle::after, .subtitle::before {
-  content:" ×———× "
-}
+.month::after, .month::before,
+.subtitle::after, .subtitle::before {content:" ×———× "}
 
 /* FOR DROPDOWN MENU!! */
 
@@ -381,18 +370,12 @@ p.firstpara {
   text-decoration: none;
 }
 
-.Dropdown::before, .Dropdown::after {
-  content:" ➷ ";
-}
+.Dropdown::before, .Dropdown::after {content:" ➷ ";}
 
 @media (max-width:66em) {
   .content, .postcontent {
     width: 100%;
     margin:auto;
-  }
-
-  .title {
-    line-height: 1em;
   }
 
   .tagline {
@@ -401,25 +384,18 @@ p.firstpara {
     margin:.75em 0 0 0;
   }
 
-  .header2rem {
-    line-height:90%;
-  }
-
-  .danceofdeathdisclaimer {
-    visibility: hidden;
-  }
-
-  .bodyimg {
-    width:80%;
-  }
+  .title {line-height: 1em;}
+  .header2rem {line-height:90%;}
+  .danceofdeathdisclaimer {visibility: hidden;}
+  .bodyimg {width:80%;}
 }
 
 @media (max-width:550px) {
-  .main-icon {width:3em;}
+  .main-icons img {width:3.5em;}
   .mrp_header {width:90%;}
   .title {
     margin-top:.25em;
-    font-size:3.5em;
+    font-size:3.75em;
   }
    .month {
     margin-top:.25em;
@@ -434,11 +410,7 @@ p.firstpara {
   .mrp_header, .fleuron {visibility:hidden;}
   .subtitle {margin-top:.25em;}
   .content {width: 100%;}
-  .title {
-    font-size:3em;
-  }
-  .main-icons{margin-top:-em;}
-  .main-icon {width:2.5em;}
+  .title {font-size:3em;}
   /* #headerbutton {visibility:hidden;} */
 }
 
@@ -478,13 +450,8 @@ p.firstpara {
   /* another good red - #d25b5b */
 }
 
-.date a {
-  background-color: red;
-}
-
-.blurb {
-  margin-bottom:2em;
-}
+.date a {background-color: red;}
+.blurb {margin-bottom:2em;}
 
 .blurb::after {
   content:"";
@@ -501,13 +468,8 @@ a .blurb {
   margin:1em 0;
 }
 
-.asterism::after {
-  content:"⁂";
-}
-
-.fleuron::after {
-  content: "❦";
-}
+.asterism::after {content:"⁂";}
+.fleuron::after {content: "❦";}
 
 .grenze {
   font-family: "Grenze Gotisch", serif;
